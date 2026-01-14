@@ -1,0 +1,39 @@
+	ArrayList in Java
+	
+	Declaration:
+	public class ArrayList<E> extends AbstractList<E> 
+	        implements List<E>, Cloneable, Serializable, RandomAccess
+	
+	Overview:
+	- It is an implementation class of the List interface, available from JDK 1.2.
+	- Stores elements based on index positions.
+	- Can accept duplicate, null, homogeneous, and heterogeneous elements.
+	- Uses a dynamic array data structure, meaning it can grow dynamically.
+	- The default capacity is 10; the next capacity is 16 (approximately 60% increase).
+	
+	Capacity Growth Formula:
+	new capacity = (current capacity * 3) / 2 + 1
+	Example: (10 * 3) / 2 + 1 = 16
+	
+	Synchronization:
+	- Methods are not synchronized, so performance-wise, it is faster than Vector.
+	- Not thread-safe, hence best used where thread safety is not required.
+	
+	Implemented Interfaces:
+	- List
+	- Cloneable
+	- Serializable
+	- RandomAccess
+	
+	Iterator Type:
+	- Uses a fail-fast iterator (throws ConcurrentModificationException if modified during iteration).
+	
+	Constructors of ArrayList:
+	1. ArrayList()
+	   → Creates an ArrayList with a default capacity of 10.
+	
+	2. ArrayList(int initialCapacity)
+	   → Creates an ArrayList with a user-defined capacity.
+	
+	3. ArrayList(Collection coll)
+	   → Creates an ArrayList containing the elements of the specified collection (loose coupling).
