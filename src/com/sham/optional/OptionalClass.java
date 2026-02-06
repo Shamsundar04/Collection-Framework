@@ -21,9 +21,9 @@ public class OptionalClass {
 //		Value may be null, safe creation without exception.
 //		Here if the value is null then this method will return an empty object of the optional class
 
-//		String email = null;
-//		Optional<String> op = Optional.ofNullable(email);
-//		System.out.println(op);  // Optional.empty
+		String email = null;
+		Optional<String> op = Optional.ofNullable(email);
+		System.out.println(op);  // Optional.empty
 		
 		
 //		isPresent()

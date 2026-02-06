@@ -32,7 +32,6 @@ public class ArrayListSerializaionAndDeSerialization {
 		}
 
 //		De-Serialization
-
 		var fis = new FileInputStream("c:\\image\\arraylist.txt");
 		var ois = new ObjectInputStream(fis);
 
