@@ -11,10 +11,10 @@ public class SortHashMap {
 		map.put("A", 3);
 		map.put("B", 1);
 		map.put("C", 2);
-
+		
 		map.entrySet()
-		   .stream()
-		   .sorted(Map.Entry.comparingByValue())
-		   .forEach(System.out::println);
+		.stream()
+		.sorted(Map.Entry.comparingByValue())
+		.forEach(System.out::println);
 	}
 }
